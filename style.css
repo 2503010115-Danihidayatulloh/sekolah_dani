@@ -1,0 +1,248 @@
+/* warna */
+:root{
+  --warna_biru_muda:#e8f3fc;
+  --warna_biru_aksen:#4aa3df;
+  --warna_biru_hero:#1f5f99;
+  --warna_biru_tua:#154a7a;
+  --warna_putih:#ffffff;
+  --warna_teks_nav:#24506f;
+  --warna_teks_isi:#1f2a33;
+  --warna_teks_abu:#5b6b77;
+  --warna_latar_isi:#f5f9fc;
+  --warna_garis:#d6e6f2;
+}
+
+/* reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:80px}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--warna_teks_isi);background:var(--warna_latar_isi)}
+a{color:inherit;text-decoration:none}
+
+/* header */
+.dani_header_utama{background:var(--warna_biru_muda);height:80px;display:flex;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--warna_garis)}
+.dani_header_isi{width:100%;max-width:1240px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.dani_logo_wrap{display:flex;align-items:center;gap:12px}
+.dani_logo_gambar{height:48px;width:auto;flex:none;object-fit:contain}
+.dani_logo_nama{display:block;font-weight:600;font-size:18px;color:var(--warna_biru_tua);white-space:nowrap}
+
+.dani_menu_utama{display:flex;gap:22px;align-items:center}
+.dani_menu_link{font-size:13.5px;letter-spacing:.3px;color:var(--warna_teks_nav);padding:8px 0;text-transform:uppercase}
+.dani_menu_link:hover{color:var(--warna_biru_aksen)}
+.dani_menu_link_aktif{color:var(--warna_biru_aksen);font-weight:600}
+
+.dani_tombol_burger{display:none;background:none;border:0;cursor:pointer;color:var(--warna_biru_tua);padding:6px}
+
+/* hero  */
+.dani_hero_beranda{position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--warna_putih);padding:90px 24px;background-color:var(--warna_biru_hero);overflow:hidden}
+.dani_hero_gambar_latar{position:absolute;inset:0;background-image:url('image/smkn1rancah.png');background-size:cover;background-position:center}
+.dani_hero_lapisan_biru{position:absolute;inset:0;background:rgba(21,74,122,.78)}
+.dani_hero_isi{position:relative;max-width:1000px;margin:0 auto}
+.dani_hero_judul{font-weight:500;font-size:clamp(34px,6vw,72px);line-height:1.12;letter-spacing:-.03em}
+.dani_hero_judul_sekolah{display:block;color:#bfe3ff}
+
+/* konten */
+.dani_konten_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_konten_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:12px}
+.dani_konten_deskripsi{color:var(--warna_teks_abu);margin-bottom:16px;max-width:860px;line-height:1.7;overflow-wrap:break-word}
+
+/* misi */
+.dani_misi_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:10px;overflow-wrap:break-word}
+.dani_misi_item:last-child{margin-bottom:0}
+
+/* profil */
+.dani_profil_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_profil_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:24px}
+.dani_profil_kolom_wrap{display:flex;flex-direction:column;gap:20px}
+.dani_profil_kolom{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-left:4px solid var(--warna_biru_aksen);border-radius:10px;padding:24px}
+.dani_profil_kolom_judul{font-size:18px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:10px}
+.dani_profil_kolom_teks{color:var(--warna_teks_abu);line-height:1.7;font-size:15px;overflow-wrap:break-word}
+.dani_profil_daftar{padding-left:20px}
+.dani_profil_daftar_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:8px;overflow-wrap:break-word}
+.dani_profil_daftar_item:last-child{margin-bottom:0}
+
+/* footer */
+.dani_footer_utama{background:var(--warna_biru_tua);color:#cfe6f7;text-align:center;padding:24px;font-size:14px}
+
+/* berita */
+.dani_berita_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_berita_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:8px}
+.dani_berita_deskripsi{color:var(--warna_teks_abu);margin-bottom:32px;line-height:1.6}
+.dani_berita_daftar{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dani_berita_kartu{background:var(--warna_putih);border:1px solid var(--warna_garis);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.dani_berita_gambar{width:100%;height:210px;object-fit:cover;display:block;background:var(--warna_biru_muda)}
+.dani_berita_isi{padding:20px;display:flex;flex-direction:column;flex:1}
+.dani_berita_tanggal{font-size:13px;color:var(--warna_biru_aksen);margin-bottom:8px}
+.dani_berita_kartu_judul{font-size:18px;font-weight:600;color:var(--warna_biru_tua);line-height:1.4;margin-bottom:10px}
+.dani_berita_ringkasan{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:16px;overflow-wrap:break-word}
+
+/* identitas sekolah */
+.dani_identitas_wrap{max-width:1240px;margin:0 auto;padding:0 24px 64px}
+.dani_identitas_judul{font-size:24px;font-weight:500;color:var(--warna_biru_tua);margin-bottom:16px}
+.dani_identitas_tabel_wrap{max-width:900px;overflow-x:auto}
+.dani_identitas_tabel{width:100%;border-collapse:collapse;text-align:left}
+.dani_identitas_baris{border-bottom:1px solid var(--warna_garis)}
+.dani_identitas_kepala{font-weight:400;font-size:16px;color:var(--warna_teks_isi);padding:20px 24px 20px 0}
+.dani_identitas_atribut{width:200px;font-weight:600;font-size:16px;color:var(--warna_teks_isi);vertical-align:top;padding:22px 24px 22px 0}
+.dani_identitas_keterangan{font-size:16px;line-height:1.6;color:var(--warna_teks_isi);vertical-align:top;padding:22px 0}
+
+/* program keahlian */
+.dani_jurusan_wrap{max-width:1240px;margin:0 auto;padding:16px 24px 64px;display:flex;flex-direction:column;gap:24px}
+.dani_jurusan_kartu{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-top:4px solid var(--warna_biru_aksen);border-radius:10px;padding:28px}
+.dani_jurusan_nama{font-size:24px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:20px}
+.dani_jurusan_bagian{padding-top:18px;margin-top:18px;border-top:1px solid var(--warna_garis)}
+.dani_jurusan_bagian_judul{font-size:17px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:10px}
+.dani_jurusan_daftar{padding-left:20px}
+.dani_jurusan_daftar_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:8px;overflow-wrap:break-word}
+.dani_jurusan_daftar_item:last-child{margin-bottom:0}
+.dani_jurusan_galeri{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dani_jurusan_galeri_gambar{width:100%;height:200px;object-fit:cover;border-radius:10px;display:block;background:var(--warna_biru_muda)}
+
+/* keahlian */
+.dani_keahlian_wrap{max-width:1240px;margin:0 auto;padding:64px 24px 32px}
+.dani_keahlian_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:8px}
+.dani_keahlian_deskripsi{color:var(--warna_teks_abu);margin-bottom:28px;line-height:1.6;max-width:760px}
+.dani_keahlian_daftar_wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dani_keahlian_daftar_kartu{display:flex;align-items:center;gap:14px;background:var(--warna_putih);border:1px solid var(--warna_garis);border-radius:10px;padding:18px 20px}
+.dani_keahlian_daftar_kartu:hover{border-color:var(--warna_biru_aksen)}
+.dani_keahlian_daftar_nomor{width:36px;height:36px;border-radius:50%;background:var(--warna_biru_muda);color:var(--warna_biru_tua);font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.dani_keahlian_daftar_nama{font-weight:600;color:var(--warna_biru_tua);line-height:1.4}
+
+/* akademik */
+.dani_akademik_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_akademik_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:8px}
+.dani_akademik_deskripsi{color:var(--warna_teks_abu);margin-bottom:28px;line-height:1.6}
+.dani_akademik_daftar_wrap{display:flex;flex-direction:column;gap:20px}
+.dani_akademik_kartu{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-left:4px solid var(--warna_biru_aksen);border-radius:10px;padding:24px}
+.dani_akademik_kartu_judul{font-size:19px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:10px}
+.dani_akademik_teks{color:var(--warna_teks_abu);line-height:1.7;font-size:15px;margin-bottom:14px;overflow-wrap:break-word}
+.dani_akademik_tabel_wrap{overflow-x:auto;margin-bottom:16px}
+.dani_akademik_tabel{width:100%;border-collapse:collapse;text-align:left;font-size:15px}
+.dani_akademik_tabel_kepala{background:var(--warna_biru_muda);color:var(--warna_biru_tua);font-weight:600;padding:12px 14px;border-bottom:1px solid var(--warna_garis);white-space:nowrap}
+.dani_akademik_tabel_sel{padding:12px 14px;border-bottom:1px solid var(--warna_garis);color:var(--warna_teks_isi);vertical-align:top}
+.dani_akademik_daftar{padding-left:20px}
+.dani_akademik_daftar_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:8px;overflow-wrap:break-word}
+.dani_akademik_daftar_item:last-child{margin-bottom:0}
+
+/* kesiswaan */
+.dani_kesiswaan_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_kesiswaan_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:8px}
+.dani_kesiswaan_deskripsi{color:var(--warna_teks_abu);margin-bottom:28px;line-height:1.6}
+.dani_kesiswaan_daftar_wrap{display:flex;flex-direction:column;gap:24px}
+.dani_kesiswaan_kartu{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-top:4px solid var(--warna_biru_aksen);border-radius:10px;padding:28px}
+.dani_kesiswaan_kartu_judul{font-size:24px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:20px}
+.dani_kesiswaan_bagian{padding-top:18px;margin-top:18px;border-top:1px solid var(--warna_garis)}
+.dani_kesiswaan_bagian_judul{font-size:17px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:10px}
+.dani_kesiswaan_teks{color:var(--warna_teks_abu);line-height:1.7;font-size:15px;margin-bottom:10px;overflow-wrap:break-word}
+.dani_kesiswaan_tebal{color:var(--warna_teks_isi);font-weight:600}
+.dani_kesiswaan_daftar{padding-left:20px}
+.dani_kesiswaan_daftar_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:8px;overflow-wrap:break-word}
+.dani_kesiswaan_daftar_item:last-child{margin-bottom:0}
+
+/* ppdb  */
+.dani_ppdb_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_ppdb_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:24px}
+.dani_ppdb_daftar_wrap{display:flex;flex-direction:column;gap:20px}
+.dani_ppdb_kartu{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-left:4px solid var(--warna_biru_aksen);border-radius:10px;padding:24px}
+.dani_ppdb_kartu_judul{font-size:20px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:12px}
+.dani_ppdb_teks{color:var(--warna_teks_abu);line-height:1.7;font-size:15px;margin-bottom:12px;overflow-wrap:break-word}
+.dani_ppdb_teks_tebal{color:var(--warna_teks_isi);font-weight:600;margin-bottom:8px}
+.dani_ppdb_tebal{color:var(--warna_teks_isi);font-weight:600}
+.dani_ppdb_daftar{padding-left:20px}
+.dani_ppdb_daftar_item{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;margin-bottom:8px;overflow-wrap:break-word}
+.dani_ppdb_daftar_item:last-child{margin-bottom:0}
+.dani_ppdb_tabel_wrap{overflow-x:auto}
+.dani_ppdb_tabel{width:100%;border-collapse:collapse;text-align:left;font-size:15px}
+.dani_ppdb_tabel_kepala{background:var(--warna_biru_muda);color:var(--warna_biru_tua);font-weight:600;padding:12px 14px;border-bottom:1px solid var(--warna_garis)}
+.dani_ppdb_tabel_sel{padding:12px 14px;border-bottom:1px solid var(--warna_garis);color:var(--warna_teks_isi);vertical-align:top}
+.dani_ppdb_alur_item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--warna_garis)}
+.dani_ppdb_alur_item:last-child{border-bottom:0;padding-bottom:0}
+.dani_ppdb_alur_nomor{width:34px;height:34px;border-radius:50%;background:var(--warna_biru_muda);color:var(--warna_biru_tua);font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
+.dani_ppdb_alur_judul{font-size:16px;font-weight:600;color:var(--warna_teks_isi);margin-bottom:4px}
+.dani_ppdb_alur_teks{color:var(--warna_teks_abu);line-height:1.6;font-size:15px}
+.dani_ppdb_telepon{color:var(--warna_biru_hero);font-weight:600}
+.dani_ppdb_telepon:hover{color:var(--warna_biru_aksen)}
+
+/* kontak */
+.dani_kontak_wrap{max-width:1240px;margin:0 auto;padding:64px 24px}
+.dani_kontak_judul{font-size:28px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:8px}
+.dani_kontak_deskripsi{color:var(--warna_teks_abu);margin-bottom:28px;line-height:1.6;max-width:760px}
+.dani_kontak_grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+.dani_kontak_kartu{width:100%;background:var(--warna_putih);border:1px solid var(--warna_garis);border-left:4px solid var(--warna_biru_aksen);border-radius:10px;padding:24px}
+.dani_kontak_kartu_judul{font-size:20px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:16px}
+.dani_kontak_form{display:flex;flex-direction:column;gap:16px}
+.dani_kontak_baris{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dani_kontak_field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.dani_kontak_label{font-size:14px;font-weight:600;color:var(--warna_teks_isi)}
+.dani_kontak_wajib{color:#c0392b}
+.dani_kontak_input{width:100%;font-family:inherit;font-size:15px;color:var(--warna_teks_isi);background:var(--warna_putih);border:1px solid var(--warna_garis);border-radius:8px;padding:12px 14px;outline:none;transition:border-color .15s,box-shadow .15s}
+.dani_kontak_input::placeholder{color:#9aabb7}
+.dani_kontak_input:focus{border-color:var(--warna_biru_aksen);box-shadow:0 0 0 3px rgba(74,163,223,.2)}
+.dani_kontak_textarea{resize:vertical;min-height:140px;line-height:1.6}
+.dani_kontak_tombol{align-self:flex-start;font-family:inherit;font-size:15px;font-weight:600;color:var(--warna_putih);background:var(--warna_biru_hero);border:0;border-radius:8px;padding:12px 28px;cursor:pointer;transition:background .15s}
+.dani_kontak_tombol:hover{background:var(--warna_biru_tua)}
+.dani_kontak_tombol:focus-visible{outline:3px solid var(--warna_biru_aksen);outline-offset:2px}
+.dani_kontak_status{font-size:14px;line-height:1.5;min-height:0}
+.dani_kontak_status:empty{display:none}
+.dani_kontak_status_galat{color:#b03a2e}
+.dani_kontak_status_sukses{color:#1e7e4a}
+.dani_kontak_info_item{padding-top:14px;margin-top:14px;border-top:1px solid var(--warna_garis)}
+.dani_kontak_info_item:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.dani_kontak_info_label{display:block;font-size:14px;font-weight:600;color:var(--warna_biru_tua);margin-bottom:4px}
+.dani_kontak_info_teks{color:var(--warna_teks_abu);line-height:1.6;font-size:15px;overflow-wrap:break-word}
+.dani_kontak_tautan{color:var(--warna_biru_hero);font-weight:600}
+.dani_kontak_tautan:hover{color:var(--warna_biru_aksen)}
+
+/* responsif */
+@media (max-width:1100px){
+  .dani_tombol_burger{display:block}
+  .dani_menu_utama{display:none;position:absolute;top:80px;left:0;right:0;background:var(--warna_biru_muda);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 16px;z-index:10;border-bottom:1px solid var(--warna_garis)}
+  .dani_menu_utama.menu_tampil{display:flex}
+  .dani_menu_link{display:block;padding:14px 0;border-bottom:1px solid var(--warna_garis)}
+  /* berita */
+  .dani_berita_daftar{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:900px){
+  .dani_kontak_grid{grid-template-columns:1fr}
+}
+
+@media (max-width:760px){
+  /* beranda */
+  .dani_hero_beranda{min-height:420px;padding:70px 20px}
+  .dani_konten_wrap,
+  .dani_profil_wrap{padding:40px 16px}
+  .dani_konten_judul,
+  .dani_profil_judul{font-size:24px}
+  .dani_profil_kolom{padding:18px}
+  /* berita */
+  .dani_berita_wrap{padding:40px 16px}
+  .dani_berita_judul{font-size:24px}
+  .dani_berita_daftar{grid-template-columns:1fr}
+  .dani_berita_gambar{height:190px}
+  .dani_identitas_wrap{padding:0 16px 40px}
+  /* jurusan */
+  .dani_jurusan_wrap{padding:8px 16px 40px}
+  .dani_jurusan_kartu{padding:20px}
+  .dani_jurusan_nama{font-size:21px}
+  .dani_jurusan_galeri{grid-template-columns:1fr}
+  .dani_jurusan_galeri_gambar{height:190px}
+  /* akademik */
+  .dani_akademik_wrap{padding:40px 16px}
+  .dani_akademik_judul{font-size:24px}
+  .dani_akademik_kartu{padding:18px}
+    /* kesiswaan */
+  .dani_kesiswaan_wrap{padding:40px 16px}
+  .dani_kesiswaan_judul{font-size:24px}
+  .dani_kesiswaan_kartu{padding:20px}
+  .dani_kesiswaan_kartu_judul{font-size:21px}
+    /* ppdb */
+  .dani_ppdb_wrap{padding:40px 16px}
+  .dani_ppdb_judul{font-size:24px}
+  .dani_ppdb_kartu{padding:18px}
+    /* kontak */
+  .dani_kontak_wrap{padding:40px 16px}
+  .dani_kontak_judul{font-size:24px}
+  .dani_kontak_kartu{padding:18px}
+  .dani_kontak_baris{grid-template-columns:1fr}
+  .dani_kontak_tombol{width:100%}
+}

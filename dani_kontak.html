@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontak – SMKN 1 Rancah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="dani_header_utama">
+  <div class="dani_header_isi">
+    <a class="dani_logo_wrap" href="index.html">
+      <img class="dani_logo_gambar" src="image/logo.png" alt="Logo SMKN 1 Rancah">
+      <span>
+        <span class="dani_logo_nama">SMKN 1 Rancah</span>
+      </span>
+    </a>
+
+    <nav class="dani_menu_utama" id="dani_menu_utama">
+      <a class="dani_menu_link" href="index.html">Beranda</a>
+      <a class="dani_menu_link" href="dani_profil.html">Profil</a>
+      <a class="dani_menu_link" href="dani_berita.html">Berita</a>
+      <a class="dani_menu_link" href="dani_program_keahlian.html">Program Keahlian</a>
+      <a class="dani_menu_link" href="dani_akademik.html">Akademik</a>
+      <a class="dani_menu_link" href="dani_kesiswaan.html">Kesiswaan</a>
+      <a class="dani_menu_link" href="dani_ppdb_spmb.html">PPDB / SPMB</a>
+      <a class="dani_menu_link dani_menu_link_aktif" href="dani_kontak.html">Kontak</a>
+    </nav>
+
+    <button class="dani_tombol_burger" id="dani_tombol_burger" aria-label="Buka menu" aria-expanded="false">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- kontak -->
+  <section class="dani_kontak_wrap" id="dani_kontak">
+    <h2 class="dani_kontak_judul">Kontak</h2>
+    <p class="dani_kontak_deskripsi">Punya pertanyaan, saran, atau masukan? Kirim pesan kepada pengelola website SMKN 1 Rancah melalui formulir berikut.</p>
+
+    <div class="dani_kontak_grid">
+
+      <!-- Form pesan -->
+      <div class="dani_kontak_kartu" id="dani_kontak_form_kartu">
+        <h3 class="dani_kontak_kartu_judul">Kirim Pesan</h3>
+
+        <form class="dani_kontak_form" id="dani_kontak_form" novalidate>
+
+          <div class="dani_kontak_baris">
+            <div class="dani_kontak_field">
+              <label class="dani_kontak_label" for="dani_kontak_nama">Nama Lengkap <span class="dani_kontak_wajib">*</span></label>
+              <input class="dani_kontak_input" type="text" id="dani_kontak_nama" name="nama" placeholder="Nama Anda" autocomplete="name" required>
+            </div>
+
+            <div class="dani_kontak_field">
+              <label class="dani_kontak_label" for="dani_kontak_email">Email <span class="dani_kontak_wajib">*</span></label>
+              <input class="dani_kontak_input" type="email" id="dani_kontak_email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="dani_kontak_baris">
+            <div class="dani_kontak_field">
+              <label class="dani_kontak_label" for="dani_kontak_telepon">Nomor HP / WhatsApp</label>
+              <input class="dani_kontak_input" type="tel" id="dani_kontak_telepon" name="telepon" placeholder="08xx-xxxx-xxxx" autocomplete="tel">
+            </div>
+
+            <div class="dani_kontak_field">
+              <label class="dani_kontak_label" for="dani_kontak_subjek">Subjek <span class="dani_kontak_wajib">*</span></label>
+              <select class="dani_kontak_input" id="dani_kontak_subjek" name="subjek" required>
+                <option value="">Pilih subjek</option>
+                <option value="Informasi PPDB / SPMB">Informasi PPDB / SPMB</option>
+                <option value="Informasi Akademik">Informasi Akademik</option>
+                <option value="Kerja Sama / Industri">Kerja Sama / Industri</option>
+                <option value="Saran dan Masukan">Saran dan Masukan</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="dani_kontak_field">
+            <label class="dani_kontak_label" for="dani_kontak_pesan">Pesan <span class="dani_kontak_wajib">*</span></label>
+            <textarea class="dani_kontak_input dani_kontak_textarea" id="dani_kontak_pesan" name="pesan" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+
+          <p class="dani_kontak_status" id="dani_kontak_status" role="alert" aria-live="polite"></p>
+
+          <button class="dani_kontak_tombol" type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+
+      <!-- Info kontak -->
+      <div class="dani_kontak_kartu" id="dani_kontak_info_kartu">
+        <h3 class="dani_kontak_kartu_judul">Informasi Sekolah</h3>
+        <div class="dani_kontak_info_item">
+          <span class="dani_kontak_info_label">Alamat</span>
+          <p class="dani_kontak_info_teks">Jl. Rajadesa – Rancah No. 412, Desa Cileungsir, Kec. Rancah, Kab. Ciamis, Jawa Barat</p>
+        </div>
+        <div class="dani_kontak_info_item">
+          <span class="dani_kontak_info_label">Informasi Pendaftaran</span>
+          <p class="dani_kontak_info_teks">Untuk pertanyaan seputar pendaftaran, lihat halaman <a class="dani_kontak_tautan" href="dani_ppdb_spmb.html#dani_ppdb_kontak">PPDB / SPMB</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="dani_footer_utama">
+  &copy; 2026 SMKN 1 Rancah.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
